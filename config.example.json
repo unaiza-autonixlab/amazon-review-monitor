@@ -1,0 +1,33 @@
+{
+  "apify_token": "apify_api_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+
+  "alert_threshold": 3,
+
+  "products": [
+    {
+      "asin": "B08N5WRWNW",
+      "name": "Client Product Name — SKU 1"
+    },
+    {
+      "asin": "B09XYZ1234",
+      "name": "Client Product Name — SKU 2"
+    }
+  ],
+
+  "email": {
+    "enabled": true,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender": "you@gmail.com",
+    "password": "xxxx-xxxx-xxxx-xxxx",
+    "recipients": [
+      "your-team@agency.com",
+      "account-manager@agency.com"
+    ]
+  },
+
+  "slack": {
+    "enabled": false,
+    "webhook_url": "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+  }
+}

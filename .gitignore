@@ -1,0 +1,7 @@
+config.json
+seen_reviews.json
+email_preview.html
+preview_email.py
+__pycache__/
+*.pyc
+*.pyo
