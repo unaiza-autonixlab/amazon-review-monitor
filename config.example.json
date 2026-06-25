@@ -6,11 +6,11 @@
   "products": [
     {
       "asin": "B08N5WRWNW",
-      "name": "Client Product Name — SKU 1"
+      "name": "Client Product Name SKU 1"
     },
     {
       "asin": "B09XYZ1234",
-      "name": "Client Product Name — SKU 2"
+      "name": "Client Product Name SKU 2"
     }
   ],
 

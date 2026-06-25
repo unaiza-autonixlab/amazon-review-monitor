@@ -24,7 +24,7 @@ def _send_email(reviews: list[dict], email_config: dict):
         stars = "⭐" * r["rating"]
         html_parts.append(f"""
         <div style="border-left:4px solid #e53e3e; padding:12px 16px; margin-bottom:20px; background:#fff5f5; border-radius:4px;">
-            <p style="margin:0 0 4px 0; font-size:18px;">{stars} — <strong>{r['title']}</strong></p>
+            <p style="margin:0 0 4px 0; font-size:18px;">{stars} <strong>{r['title']}</strong></p>
             <p style="margin:0 0 8px 0; color:#666; font-size:13px;">{r['author']} · {r['date']}</p>
             <p style="margin:0 0 10px 0; font-size:14px; color:#333;">{r['body'][:500]}{'...' if len(r['body']) > 500 else ''}</p>
             <p style="margin:0;"><strong>ASIN:</strong> {r['asin']} ·

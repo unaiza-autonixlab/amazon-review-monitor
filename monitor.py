@@ -37,7 +37,7 @@ def main():
     api_token = config.get("apify_token", "")
     if not api_token or api_token.startswith("apify_api_XXX"):
         print("[!] Add your Apify API token to config.json.")
-        print("    Get one free at: https://apify.com — no credit card required.")
+        print("    Get one free at: https://apify.com (no credit card required)")
         sys.exit(1)
 
     threshold = config.get("alert_threshold", 3)
@@ -49,7 +49,7 @@ def main():
         sys.exit(1)
 
     print(f"\n{'='*50}")
-    print(f"Amazon Review Monitor — {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"Amazon Review Monitor | {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"Monitoring {len(products)} product(s) | Alert threshold: {threshold} stars or below")
     print(f"{'='*50}\n")
 

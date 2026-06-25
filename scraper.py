@@ -8,7 +8,7 @@ ACTOR_ID = "junglee~amazon-reviews-scraper"
 def fetch_recent_reviews(asin: str, api_token: str, max_reviews: int = 20) -> list[dict]:
     """
     Fetch the most recent reviews for a given ASIN via Apify.
-    Requires a free Apify account token — sign up at apify.com.
+    Requires a free Apify account token. Sign up at apify.com.
     """
     url = (
         f"{APIFY_BASE}/acts/{ACTOR_ID}/run-sync-get-dataset-items"
@@ -28,7 +28,7 @@ def fetch_recent_reviews(asin: str, api_token: str, max_reviews: int = 20) -> li
         print(f"  [!] Apify timed out for {asin}. Try again or increase timeout.")
         return []
     except requests.exceptions.HTTPError as e:
-        print(f"  [!] Apify error for {asin}: {e.response.status_code} — {e.response.text[:200]}")
+        print(f"  [!] Apify error for {asin}: {e.response.status_code} {e.response.text[:200]}")
         return []
     except requests.RequestException as e:
         print(f"  [!] Request failed for {asin}: {e}")
